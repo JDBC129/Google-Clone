@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> <!--recuerda que en head se aplica lo que no ve el usuario y que nos permite un proceso de renderización, optimización, y extensiones, etc-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Clone</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body> <!--en body se aplica la estrucutra de nuestro archivo HTML y que puede ver el usuario-->
+        <header> <!--etiqueta semantica que es el encabezado del archivo HTML-->
+            <nav> <!--barra de navegación-->
+                <ul class="nav-right-section"> <!--se aplica una clase con un nombre generico y explicito, siguiendo la metodología de la arquitectura CSS BEM-->
+                    <li><a href="">Gmail</a></li>
+                    <li><a href="">Imágenes</a></li>
+                    <li class="menu-icon"><a href=""></a></li>
+                    <li><a href=""><img src="./img/photo.png" alt="foto del perfil"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main> <!--etiqueta semantica, donde se agrega especificamente el contenido principal del layout de nuestro archivo HTML-->
+            <section class="main-logo"> <!--en el primer sección se aplicara el gran logo de google-->
+                <img src="https://img.pngio.com/google-logo-2015-png-image-purepng-free-transparent-cc0-png-google-logo-transparent-10000_3382.png" alt=""> <!--se agrega una etiqueta img para el logo de google-->
+            </section>
+            <section class="main-input"> <!--en el segundo sección se aplican diferentes etiquetas dependiendo su función-->
+                <div class="main-input-container"> <!--se aplica un div que sirve para dividir este contendor de los demás-->
+                        <span class="search-icon"> <!--se aplica un span para agregar el icono de la lupa que funcionará de focus para el input de búsqueda-->
+                        </span>
+                        <input type="text"> <!--se aplica un input que funcionará para ingresar texto que servirá para simular una búsqueda-->
+                    <a class="micro-icon" href=""></a> <!--se agrega una etiqueta a para usarlo para el icono del microfono que no hara focus, si no tendrá otra función-->
+                </div>
+            </section>
+            <section class="main-buttons"> <!--tercera sección donde se aplicará los botones-->
+                <div> <!--se aplican dos div para cada botón-->
+                    <button>Buscar con Google</button> <!--se agrega una etiqueta boton y llevara como contenido un texto-->
+                </div>
+                <div>
+                    <button>Me siento con suerte</button>
+                </div>
+            </section>
+        </main>
+        <footer> <!--pie de página-->
+            <ul class="footer-left">
+                <li><a href="">Publicidad</a></li>
+                <li><a href="">Negocios</a></li>
+                <li><a href="">Acerda de</a></li>
+                <li><a href="">Cómo funciona la búsqueda</a></li>
+            </ul>
+            <ul class="footer-right">
+               <li><a href="">Privacidad</a></li>
+               <li><a href="">Condiciones</a></li>
+               <li><a href="">Preferencias</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,189 @@
+body{
+    margin: 0; /*se aplica un margin 0 al body*/
+    padding: 0; /*se aplica un padding 0 al body*/
+    font-size: 1.3rem; /*se aplica un tamaño de letra de 1.3 rem que equivale a 13px*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%; /*el tamaño de fuente de todo el archivo sera de unn 62.5% de su tamaño original, esto nos permitira usar medidas relativas como rem*/
+}
+
+a{
+    text-decoration: none; /*decoración de texto ninguna para el ancla*/
+    cursor: pointer; /*que el cursor se convierta en una mano al pasar en las etiquetas ancla*/
+}
+
+header{
+    width: 100%; /*un ancho del 100% de su contenedor padre*/
+    height: 6rem; /*un alto de 6rem que equivale a 60px*/
+}
+
+header nav{
+    display: flex; /*se aplica display, y a este se le aplica flex*/
+    justify-content: flex-end; /*justificamos el contenido para que se vaya al final de su contenedor padre, por ende estará al final de este último es decir que estará en el lado derecho*/
+}
+
+header nav .nav-right-section{
+    width: 25rem; /*se aplica un ancho de 25rem que equivale a 250px*/
+    height: auto; /*Una altura automática*/
+    display: flex; /*se aplica display, y a este se le aplica flex*/
+    justify-content: center; /*justificamos el contenido para centrarlo horizontalmente*/
+    align-items: center; /*alineamos los items centrados verticalmente*/
+    list-style: none; /*se le quita los estilos por defecto que tenia el contenido de las listas*/
+}
+
+nav .nav-right-section a{
+    margin-right: 1rem; /*un espacio entre cajas de 1rem que equivale a 10px*/
+    color: #000000; /*color hexadecimal definido en negro*/
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url("https://static.thenounproject.com/png/756729-200.png"); /*se le da un fondo de una imagen, en este caso la imagen proviene de una url*/
+    background-repeat: no-repeat; /*se coloca una repetición de fondo y su valor será que no se repetira el fondo, ya que al dejarlo por defecto cabe la probabilidad de que llene el espacio vacio repitiendo la imagen*/
+    background-position: center; /*la posición del fondo quedara centrada*/
+    background-size: contain; /*el tamaño del fondo con el valor contain sirve para definir que el tamaño del fondo sea del mismo tamaño que de su contenedor en este caso el tamaño de li, que se definira posteriormente con width y con height*/
+    width: 2.5rem; /*un ancho de 2.5rem que equivale a 25px*/
+    height: 2.5rem; /*un alto de 2.5rem que equivale a 25px*/
+    cursor: pointer;
+}
+
+nav .nav-right-section li a img{
+    width: 3.2rem; /*un ancho de 3.2rem que equivale a 32px*/
+    height: 3.2rem; /*un alto de 3.2rem que equivale a 32px*/
+    border-radius: 50%; /*un border radius al 50% para hacer que la imagen sea redonda*/
+    margin-left: 1rem; /*un margin a la izquierda que deja un espacio entre las cajas de 1rem que equivale a 10px*/
+}
+
+
+
+
+
+main{ /*se llama main que lleva el contenido principal*/
+    margin-top: 15rem; /*se le agrega un margin-top de 15rem que equivale a 150px, esto nos permite tener un espacio desde arriba del contenedor main con el contenedor header*/
+    text-align: center; /*se le aplica alinear texto, y a este mismo tendrá el valor center que centrará de forma horizontal el contenido que lleva este contenedor*/
+}
+
+main .main-logo{
+    width: 53rem; /*un ancho de 53rem que equivale a 530px*/
+    margin: 0 auto; /*el 0 hara que el espacio entre cajas sea cero desde arriba a hacia abajo, y el auto hara que automaticamente se divida en dos el margin de los lados es decir de derecha a izquierda*/
+    margin-bottom: 3.5rem; /*un margin de abajo de 3.5rem que equivale a 35px*/
+}
+
+main .main-logo img{
+    width: 27.2rem; /*un ancho de 27.2rem a la imagen que equivale a 272px*/
+    height: 9.2rem; /*un alto de 9.2rem a la imagen que equivale a 92px*/
+}
+
+
+main .main-input{
+    width: 53rem; /*un ancho de 53rem que equivale a 530px*/
+    margin: 0 auto; /*el 0 hara que el espacio entre cajas sea cero desde arriba a hacia abajo, y el auto hara que automaticamente se divida en dos el margin de los lados es decir de derecha a izquierda*/
+    margin-bottom: 3.5rem; /*un margin abajo de 3.5rem que equivale a 35px*/
+}
+
+main .main-input-container{
+    width: 52.5rem; /*un ancho de 52.5rem que equivale a 525px*/
+    border-radius: 1rem; /*border radius de 1rem o 10px*/
+    border: 0.1rem solid #dfe1e5; /*se declara un border*/
+    display: flex; /*se declara un display flex*/
+    justify-content: space-between; /*justificamos el contenido con un espacio entre ellos*/
+    align-items: center; /*alineamos los items centrados verticalmente*/
+}
+
+main .main-input input{
+    width: 42rem; /*ancho de 42rem o 420px*/
+    height: 4rem; /*alto de 4rem o 40px*/
+    border: none; /*sin borde*/
+    outline: none; /*outline sirve para dibujar un borde alrededor del elemento que lo hace resaltar, en este caso establecemos un none, para que no ejecute esto en el input*/
+}
+
+main .main-input-container:hover{ /*se llama las especificaciones y se agrega una subclase*/
+    box-shadow: 0rem 0.1rem 0.6rem #20212447; /*aparecera una sombra cuando se pase el cursor en el elemento*/
+    border-color: #dfe1e500; /*cuando el cursor pase encima del contenedor cambiará el color del borde por este que estamos declarando*/
+}
+
+
+main .main-input .search-icon{
+    background-image: url("https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png");
+    background-position: center; /*la posición del fondo quedara centrada*/
+    background-repeat: no-repeat; /*se coloca una repetición de fondo y su valor será que no se repetira el fondo, ya que al dejarlo por defecto cabe la probabilidad de que llene el espacio vacio repitiendo la imagen*/
+    background-size: contain; /*el tamaño del fondo con el valor contain sirve para definir que el tamaño del fondo sea del mismo tamaño que de su contenedor en este caso el tamaño de span, que se definira posteriormente con width y con height*/
+    width: 2rem; /*ancho de 2rem para el icono*/
+    height: 2rem; /*alto de 2rem para el icono*/
+    margin-left: 1.2rem; /*margin a la izquierda de un 1.2rem*/
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    background-position: center; /*la posición del fondo quedara centrada*/
+    background-repeat: no-repeat; /*se coloca una repetición de fondo y su valor será que no se repetira el fondo, ya que al dejarlo por defecto cabe la probabilidad de que llene el espacio vacio repitiendo la imagen*/
+    background-size: contain; /*el tamaño del fondo con el valor contain sirve para definir que el tamaño del fondo sea del mismo tamaño que de su contenedor en este caso el tamaño de span, que se definira posteriormente con width y con height*/
+    width: 2rem; /*ancho de 2rem para el icono*/
+    height: 2rem; /*alto de 2rem para el icono*/
+    margin-right: 1.2rem; /*margin a la derecha de un 1.2rem*/
+}
+
+main .main-buttons{
+    width: 53rem; /*ancho de 53rem o 530px*/
+    margin: 0 auto; /*el 0 hara que el espacio entre cajas sea cero desde arriba a hacia abajo, y el auto hara que automaticamente se divida en dos el margin de los lados es decir de derecha a izquierda*/
+}
+
+main .main-buttons div{
+    display: inline-block; /*combinación entre inline y block*/
+} 
+
+main .main-buttons button{
+    height: 3.6rem; /*altura de 3.6rem o 36px*/
+    background-color: #f2f2f2; /*color de fondo*/
+    border: none; /*sin borde*/
+    font-size: 1.4rem; /*tamaño de fuente*/
+    color: #5f6368; /*color hexadecimal a la fuente*/
+    border-radius: 0.5rem; /*border radius*/
+    padding: 0rem 1.5rem; /*padding de derecha a izquierda de 1.5rem*/
+    margin-right: 0.75rem; /*margin de derecha de 0.75rem*/
+    margin-left: 0.75rem; /*margin de izquierda de 0.75rem*/
+}
+
+main .main-buttons button:hover{ /*declaración de una subclase*/
+    border: 0.1rem solid #c6c6c6; /*se crea un border a la hora de pasar el cursor*/
+    box-shadow: 0rem 0.05rem 0.05rem #19191a; /*sale una sombra*/
+    color: #222; /*cambia el color de la fuente*/
+}
+
+footer{
+    width: 100%; /*100% del ancho*/
+    height: 5rem; /*altura de 5rem o 50px*/
+    position: absolute; /*posición absoluta*/
+    bottom: 0; /*bottom 0 para asegurarnos que el footer quede debajo de la página totalmente*/
+    display: grid; /*display con grid*/
+    grid-template-columns: 1fr 1fr; /*declaramos que las columnas tengan dos fracciones*/
+    align-items: center; /*centramos items*/
+    font-size: 1.3rem; /*tamaño fuente*/
+    background-color: #f2f2f2; /*color fondo*/
+    border-top: solid 0.1rem #c4c4c4; /*aplicamos un borde de arriba*/
+}
+
+footer ul{
+    margin: 1rem; /*margin de 1rem*/
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    display: flex;
+    justify-self: left; /*que se vaya a la izquierda*/
+}
+
+footer .footer-right{
+    display: flex;
+    justify-self: right; /*que se vaya a la derecha*/
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #5f6368;
+    margin-right: 1.5rem;
+}
+
